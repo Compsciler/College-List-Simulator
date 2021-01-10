@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Main {
     private static int collegeTotal = 50;
     private static int collegeListTotal = 8;
@@ -23,6 +25,8 @@ public class Main {
                 expectedRank += noPreviousAcceptancesChance * collegeChance * college;
                 noPreviousAcceptancesChance *= (1 - collegeChance);
             }
+            expectedRank += noPreviousAcceptancesChance * noAcceptanceRankScore;
+
             if (expectedRank < minExpectedRank){
                 minExpectedRank = expectedRank;
                 minExpectedRankCollegeList = collegeList.clone();
@@ -35,7 +39,7 @@ public class Main {
             }
         }
 
-        System.out.println(minExpectedRankCollegeList);
+        System.out.println(Arrays.toString(minExpectedRankCollegeList));
         System.out.println("Expected rank: " + minExpectedRank);
     }
     public static void incrementCollegeList() throws IllegalArgumentException{
