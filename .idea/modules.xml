@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CollegeListSimulator.iml" filepath="$PROJECT_DIR$/CollegeListSimulator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/College-List-Simulator.iml" filepath="$PROJECT_DIR$/College-List-Simulator.iml" />
     </modules>
   </component>
 </project>
